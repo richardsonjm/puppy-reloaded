@@ -5,7 +5,7 @@ class CLIPuppies
     @prompt = "ˁ˚ᴥ˚ˀ *Woof!* =>>  "
   end
 
-  def input_title
+  def input_title 
     puts "Input a page title."
     print @prompt
     gets.strip
