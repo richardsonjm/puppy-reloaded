@@ -25,6 +25,9 @@
 
   <body style="margin: 0px;">
 
+    <% id = YoutubeSearch.search('puppies').first['video_id'] %>
+    <%= {<iframe src="http://www.youtube.com/embed/#{id}" width=640 height=480 frameborder=0></iframe>} %>
+
     <img style="-webkit-user-select: none; cursor: -webkit-zoom-out;" src="http://placedog.com/<%= settings.width %>/<%= settings.height %>" width="<%= settings.width %>" height="<%= settings.height %>">
 
   </body>

@@ -1,3 +1,4 @@
+require 'youtube_search'
 require 'erb'
 require 'pry'
 
