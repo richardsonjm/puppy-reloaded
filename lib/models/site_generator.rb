@@ -11,6 +11,7 @@ class SiteGenerator
 
   def run
     settings = Reload.new(title, height, width, duration)
+    puns = Pun.all
     index = ERB.new(File.open('lib/views/puppy_reloaded.erb').read)
     File.open('_site/index.html', 'w+') do |f|
       f << index.result(binding)
