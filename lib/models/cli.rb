@@ -2,7 +2,7 @@ class CLIPuppies
   attr_reader :prompt
 
   def initialize
-    @prompt = "U｡・ｪ・｡U *Woof!* =>>  "
+    @prompt = "ˁ˚ᴥ˚ˀ *Woof!* =>>  "
   end
 
   def input_title
