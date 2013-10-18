@@ -2,10 +2,10 @@ class CLIPuppies
   attr_reader :prompt
 
   def initialize
-    @prompt = "U｡・ｪ・｡U *Woof!* =>>  "
+    @prompt = "U・ｪ・U *Woof!* =>>  "
   end
 
-  def input_title
+  def input_title 
     puts "Input a page title."
     print @prompt
     gets.strip
