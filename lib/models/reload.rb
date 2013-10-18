@@ -1,11 +1,11 @@
 class Reload
-  attr_accessor :seconds, :title, :width, :height
+  attr_reader :duration, :title, :width, :height
 
-  def initialize(title, width=500, height=500, seconds=8)
+  def initialize(title, width=500, height=500, duration=8)
     @title = title
-    @seconds = seconds
-    @width = width
     @height = height
+    @width = width
+    @duration = duration
   end
   
 end

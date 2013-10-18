@@ -1,6 +1,6 @@
 <html>
   <head>
-    <meta http-equiv="refresh" content="<%= settings.seconds %>" /> 
+    <meta http-equiv="refresh" content="<%= settings.duration %>" /> 
     <meta name="viewport" content="width=device-width">
     <title><%= settings.title %> (<%= settings.width %>×<%= settings.height%>)</title>
     <style>
@@ -25,8 +25,8 @@
 
   <body style="margin: 0px;">
 
-    <% id = YoutubeSearch.search('puppies').rand(1..25)['video_id'] %>
-    <%= %{<iframe src="http://www.youtube.com/embed/#{id}" width=640 height=480 frameborder=0></iframe>} %>
+<!--     <% id = YoutubeSearch.search('puppies').first['video_id'] %>
+    <%= %{<iframe src="http://www.youtube.com/embed/#{id}" width=640 height=480 frameborder=0></iframe>} %> -->
 
     <img style="-webkit-user-select: none; cursor: -webkit-zoom-out;" src="http://placedog.com/<%= settings.width %>/<%= settings.height %>" width="<%= settings.width %>" height="<%= settings.height %>">
 
